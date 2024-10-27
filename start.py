@@ -150,7 +150,6 @@ def LinktreeResponse(responses, Service):
     for response in responses:
         if type(response) is int:
             print(f"{Colorize("ERROR: ", "BRIGHT_RED")} Proxy connection")
-            print(config_file['proxy'])
         elif type(response) is not int:
             if response["result"] == "fail":
                 print(f"{Colorize(response["Username"], "RED")} has been taken already.")
@@ -223,7 +222,6 @@ def DiscordVanityResponse(responses, Service):
             UpdateTitle(Service)
             counters.SaveCounters(counter, Service)
         elif response == None:
-            print(response)
             print(f"{Colorize("ERROR: ", "BRIGHT_RED")} Proxy connection")
             continue
 
