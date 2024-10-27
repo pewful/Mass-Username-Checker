@@ -149,7 +149,7 @@ def CreateTasks(Session, index_of_word, Threads, Service):
 def LinktreeResponse(responses, Service):
     for response in responses:
         if type(response) is int:
-            print(f"{Colorize("ERROR: ", "BRIGHT_RED")} Proxy connection")
+            print(f"{Colorize("ERROR: ", "BRIGHT_RED")} Rate Limited")
         elif type(response) is not int:
             if response["result"] == "fail":
                 print(f"{Colorize(response["Username"], "RED")} has been taken already.")
@@ -165,11 +165,11 @@ async def DiscordResponse(responses, Service):
     for response in responses:
         if type(response) is int:
             sleep_time = random.randint(3, 9)
-            print(f"{Colorize("ERROR: ", "BRIGHT_RED")} Proxy connection. Sleeping for: {sleep_time}")
+            print(f"{Colorize("ERROR: ", "BRIGHT_RED")} Rate Limited. Sleeping for: {sleep_time}")
             await asyncio.sleep(sleep_time)
         elif "global" in response:
             sleep_time = random.randint(3, 9)
-            print(f"{Colorize("ERROR: ", "BRIGHT_RED")} Proxy connection. Sleeping for: {sleep_time}")
+            print(f"{Colorize("ERROR: ", "BRIGHT_RED")} Rate Limited. Sleeping for: {sleep_time}")
             await asyncio.sleep(sleep_time)
             continue
         else:
@@ -192,7 +192,7 @@ async def DiscordResponse(responses, Service):
 def RobloxResponse(responses, Service):
     for response in responses:
         if type(response) is int:
-            print(f"{Colorize("ERROR: ", "BRIGHT_RED")} Proxy connection")
+            print(f"{Colorize("ERROR: ", "BRIGHT_RED")} Rate Limited")
         elif response != None:
             if response['taken']:
                 print(f"{Colorize(response["Username"], "RED")} has been taken already.")
@@ -204,13 +204,13 @@ def RobloxResponse(responses, Service):
             UpdateTitle(Service)
             counters.SaveCounters(counter, Service)
         elif response == None:
-            print(f"{Colorize("ERROR: ", "BRIGHT_RED")} Proxy connection")
+            print(f"{Colorize("ERROR: ", "BRIGHT_RED")} Rate Limited")
             continue
 
 def DiscordVanityResponse(responses, Service):
     for response in responses:
         if type(response) is int:
-            print(f"{Colorize("ERROR: ", "BRIGHT_RED")} Proxy connection")
+            print(f"{Colorize("ERROR: ", "BRIGHT_RED")} Rate Limited")
         elif response != None:
             if not response['code'] == 10006:
                 print(f"{Colorize(response['Vanity'], "GREEN")} is valid!")
@@ -222,7 +222,7 @@ def DiscordVanityResponse(responses, Service):
             UpdateTitle(Service)
             counters.SaveCounters(counter, Service)
         elif response == None:
-            print(f"{Colorize("ERROR: ", "BRIGHT_RED")} Proxy connection")
+            print(f"{Colorize("ERROR: ", "BRIGHT_RED")} Rate Limited")
             continue
 
 def MinecraftResponse(responses, Service):
