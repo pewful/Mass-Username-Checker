@@ -1,5 +1,5 @@
 #             Mass-Username-Checker
-## Checks username / vanity availibility via a loaded wordlist
+## Checks username / vanity availability via a loaded wordlist
 
 ### Supported Sites / Services:
 - Discord
