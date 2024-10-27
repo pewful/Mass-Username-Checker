@@ -26,3 +26,6 @@
                "proxy": {"username": "Your Proxy Username", "password": "Your Proxy Password", "ip": "Proxy IP:Port"}
 4. Save the file
 
+### Examples
+![](https://raw.githubusercontent.com/pewful/Mass-Username-Checker/refs/heads/main/example_imgs/Screenshot%202024-10-27%20060746.png)
+![](https://raw.githubusercontent.com/pewful/Mass-Username-Checker/refs/heads/main/example_imgs/Screenshot%202024-10-27%20060848.png)
