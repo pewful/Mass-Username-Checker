@@ -213,10 +213,10 @@ def DiscordVanityResponse(responses, Service):
             print(f"{Colorize("ERROR: ", "BRIGHT_RED")} Rate Limited")
         elif response != None:
             if not response['code'] == 10006:
-                print(f"{Colorize(response['Vanity'], "GREEN")} is valid!")
-                SaveName(response['Vanity'], wordlist_selection, Service)
+                print(f"{Colorize(response['Vanity'], "RED")} is taken!")
             else:
-                print(f"{Colorize(response["Vanity"], "RED")} is not a valid invite")
+                print(f"{Colorize(response["Vanity"], "RED")} is available!")
+                SaveName(response['Vanity'], wordlist_selection, Service)
             
             counter[wordlist_selection] += 1
             UpdateTitle(Service)
