@@ -1,0 +1,33 @@
+{
+    "proxy": false,
+    "Discord": {
+        "shortest_username" : 2,
+        "longest_username": 32,
+        "special_characters": "~!@#$%^&*()-+={}][|\\`,/?;:'\"<>"
+    },
+    "Linktree": {
+        "shortest_username" : 2,
+        "longest_username": 30,
+        "special_characters": "~!@#$%^&*()-+={}][|\\`,/?;:'\"<>"
+    },
+    "Roblox": {
+        "shortest_username" : 3,
+        "longest_username": 20,
+        "special_characters": "~!@#$%^&*()-+={}][|\\`,/?;:'\"<>"
+    },
+    "Minecraft": {
+        "shortest_username" : 3,
+        "longest_username": 16,
+        "special_characters":"-~!@#$%^&*()+={}][|\\`,/?;:'\"<>"
+    },
+    "Discord Vanity": {
+        "shortest_username" : 2,
+        "longest_username": 32,
+        "special_characters": "_.~!@#$%^&*()-+={}][|\\`,/?;:'\"<>"
+    },
+    "Github": {
+        "shortest_username": 3,
+        "longest_username": 39,
+        "special_characters": "~!@#$%^&*()-_+={}][|\\`,./?;:'\"<>"
+    }
+}
