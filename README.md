@@ -9,6 +9,13 @@
 - Minecraft
 - Github
 
+### Setting Mass Username Checker up
+1. Download and install Python 3.12
+2. Download the Mass-Username-Checker ZIP
+3. Extract ZIP file into desired folder
+4. "pip install -r requirements.txt" in command prompt inside the main folder
+5. To start the script run "py start.py" inside the main folder
+
 ### Adding Wordlists
 1. Create or download a wordlist .txt file where every word is seperated by a newline
 2. Drop the wordlist .txt file into the wordlists folder
