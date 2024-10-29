@@ -96,7 +96,12 @@ counter = counters.LoadCounters(word_lists, Services, Service)
 wordlist_selection = WordlistMenu(Services, Service)
 words = wordlists.LoadWords(wordlist_selection)
 system(f"title {Service} - {wordlist_selection}")
-            
+
+if len(words) == 0:
+    print(f'{Colorize("ERROR: ", "BRIGHT_RED")} No wordlists.')
+    print("Drop wordlists into the wordlists folder. Each word should be seperated by a new line.")
+    exit()
+    
 def UpdateTitle(Service):
     system(f"title {Service} - {wordlist_selection}     [{counter[wordlist_selection]} / {len(words)}]")
 
